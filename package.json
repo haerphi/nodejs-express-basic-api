@@ -1,0 +1,23 @@
+{
+  "name": "nodeexpresstest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haerphi/nodeExpressTest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haerphi/nodeExpressTest/issues"
+  },
+  "homepage": "https://github.com/haerphi/nodeExpressTest#readme",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1"
+  }
+}
