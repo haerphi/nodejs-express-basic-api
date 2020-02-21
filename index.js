@@ -1,6 +1,9 @@
 var express = require("express");
 var app = express();
 
+const { APP_PORT, PORT } = process.env;
+const port = APP_PORT || PORT || 8080;
+
 app.use("/static", express.static("public"));
 
 app.get("/timeout", function(req, res) {
@@ -10,6 +13,10 @@ app.get("/timeout", function(req, res) {
   }, delay * 1000);
 });
 
-app.listen(8080, function() {
+app.get("/timeout", function(req, res) {
+  res.send("Hello world");
+});
+
+app.listen(port, function() {
   console.log("http://localhost:8080");
 });
