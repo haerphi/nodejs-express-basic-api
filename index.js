@@ -13,7 +13,7 @@ app.get("/timeout", function(req, res) {
   }, delay * 1000);
 });
 
-app.get("/timeout", function(req, res) {
+app.get("/", function(req, res) {
   res.send("Hello world");
 });
 
