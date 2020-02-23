@@ -10,6 +10,7 @@ app.use("/static", express.static("public"));
 
 app.get("/timeout", function(req, res) {
   const delay = 60;
+  console.log("timeout incoming !");
   setTimeout(() => {
     res.send(`Timeout of ${delay}s`);
   }, delay * 1000);
