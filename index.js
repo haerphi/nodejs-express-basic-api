@@ -16,6 +16,14 @@ app.get("/timeout", function(req, res) {
   }, delay * 1000);
 });
 
+app.get("/timeout10", function(req, res) {
+  const delay = 10;
+  console.log("timeout incoming !");
+  setTimeout(() => {
+    res.send(`Timeout of ${delay}s`);
+  }, delay * 1000);
+});
+
 app.get("/", function(req, res) {
   res.send("Hello world");
 });
