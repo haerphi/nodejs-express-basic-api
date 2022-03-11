@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/haerphi/nodeExpressTest#readme",
   "dependencies": {
+    "body-parser": "^1.19.2",
     "ejs": "^2.7.1",
     "express": "^4.17.1",
     "prettier": "^2.5.1"
